@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/087f4aa902.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>PTech - Padel para devs</title>
+</head>
+<body>
+    <header>
+        <nav class="header">
+            <ul class="navegacion">
+                <li><a href="../index.html"><img src="../assets/img/6359883.jpg" alt="Logo principal de padel" width=5%></a>
+                </li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenidoPrincipal">
+        <h1>Formulario de contacto</h1>
+        <form>
+            <div>
+                <label for="nombre">Nombre:
+
+                    <input type="text" placeholder="Ingrese su nombre" required name="nombre" id="nombre">
+                </label>
+            </div>
+            <div>
+                <label for="apellido">Apellido:
+
+                    <input type="text" placeholder="Ingrese su apellido" required name="apellido" id="apellido">
+                </label>
+            </div>
+            <div>
+                <label for="apellido">E-mail:
+
+                    <input type="email" placeholder="Ingrese su email" required name="email" id="email">
+                </label>
+            </div>
+            <div>
+                <label for="motivo">Seleccione un motivo de contacto:
+
+                    <select name="motivo" id="motivo">
+                        <option value="comprar">Comprar</option>
+                        <option value="reservar">Reservar</option>
+                        <option value="devolucion">Devolucion</option>
+                        <option value="queja">Queja</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="consulta">
+                    <textarea id="consulta" placeholder="Escriba su consulta" rows="10" cols="70"></textarea>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <button type="submit">Enviar</button>
+                </label>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <b>Footer</b>
+        <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+    </footer>
+</body>
+</html>
