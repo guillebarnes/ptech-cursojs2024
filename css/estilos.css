@@ -161,12 +161,13 @@ header, footer{
     margin:0 auto;
     display: grid;
     width: 75%;
-    grid-gap: 1rem;
+    grid-gap: 0.5rem;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 25% 25% 25% 25%;
     grid-template-areas: "filtro1 prod1 prod2 prod3"
                          "filtro2 prod1 prod2 prod3"
-                         "filtro3 prod1 prod2 prod3";
+                         "filtro3 prod1 prod2 prod3"
+                         "filtro4 texto1 texto2 texto3";
     img{
         width: 100%;
     }
@@ -185,6 +186,11 @@ header, footer{
     background-color: blue;
 }
 
+.carrito-filtro4{
+    grid-area: filtro4;
+    background-color: blue;
+}
+
 .carrito-productos1 {
     grid-area: prod1;
     background-color: brown;
@@ -198,4 +204,19 @@ header, footer{
 .carrito-productos3 {
     grid-area: prod3;
     background-color: brown;
+}
+
+.carrito-texto1 {
+    grid-area: texto1;
+    background-color: gray;
+}
+
+.carrito-texto2 {
+    grid-area: texto2;
+    background-color: gray;
+}
+
+.carrito-texto3 {
+    grid-area: texto3;
+    background-color: gray;
 }
