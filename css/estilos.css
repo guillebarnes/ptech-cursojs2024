@@ -9,6 +9,14 @@
 /*
     -----------clases del index-----------
 */
+
+.maqueta-principal{
+    display: grid;
+    grid-template-areas: "header"
+                         "body"
+                         "footer"   ;
+}
+
 .galeria {
     
     display: flex;
@@ -74,11 +82,25 @@ body {
 }
 
 .header {
-    padding: 1rem;
+    grid-area: header;
     background-color: rgb(97, 97, 97);
+    display: flex;
+    align-items: flex-end;
+}
+
+.header-flex-item{
+    padding: 5px;
+    width: 50%;
+}
+
+ul.navegacion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .contenido-principal {
+    grid-area: body;
     margin: 0 auto;
     width: 80%;
     padding: 1rem;
@@ -87,7 +109,8 @@ body {
 }
 
 .footer {
-    padding: 1rem;
+    font-size: 0.8rem;
+    grid-area: footer;
     background-color: rgb(97, 97, 97);
 }
 
